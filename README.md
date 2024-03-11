@@ -1,12 +1,10 @@
 # kanji-2896
 つば九郎の Ameba ブログにて、ひらがな文章を漢字変換する Chrome 拡張です。
 
-## Example
-
-### Before
+## Before
 ![拡張適用前](./assets/imgs/examples/before.png "拡張適用前")
 
-### After
+## After
 ![拡張適用後](./assets/imgs/examples/after.png "拡張適用後")
 
 ## Usage
