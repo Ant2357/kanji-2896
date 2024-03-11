@@ -13,5 +13,5 @@
     "service_worker": "background.js",
     "matches": ["https://ameblo.jp/2896-blog/*"]
   },
-  "host_permissions": ["http://*/*", "https://*/*"]
+  "host_permissions": ["https://ameblo.jp/2896-blog/*"]
 }
