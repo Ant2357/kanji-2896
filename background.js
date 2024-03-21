@@ -9,8 +9,21 @@ chrome.tabs.onUpdated.addListener(async (tabId, changeInfo, tab) => {
   const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
   await sleep(500);
 
-  chrome.scripting.executeScript({
-    target: { tabId: tab.id },
-    files: ['./main.js'],
+  chrome.storage.local.get("isConvertKanji", (result) => {
+    // storage が空なら、isConvertKanji を true にする(初回起動時想定)
+    if (Object.keys(result).length === 0) {
+      chrome.storage.local.set({isConvertKanji: true});
+      result.isConvertKanji = true;
+    }
+
+    // 変換OFF の設定の時は何もしない
+    if (!result.isConvertKanji) {
+      return;
+    }
+
+    chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      files: ['./main.js'],
+    });
   });
 });

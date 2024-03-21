@@ -12,7 +12,7 @@
     "default_icon": "assets/imgs/icons/icon16.png",
     "default_popup": "popup.html"
   },
-  "permissions": ["tabs", "scripting"],
+  "permissions": ["tabs", "scripting", "storage"],
   "background": {
     "service_worker": "background.js",
     "matches": ["https://ameblo.jp/2896-blog/*"]
