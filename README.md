@@ -1,11 +1,7 @@
 # kanji-2896
+![拡張適用例](./assets/imgs/examples/animation.gif "拡張適用例")
+
 つば九郎の Ameba ブログにて、ひらがな文章を漢字変換する Chrome 拡張です。
-
-## Before
-![拡張適用前](./assets/imgs/examples/before.png "拡張適用前")
-
-## After
-![拡張適用後](./assets/imgs/examples/after.png "拡張適用後")
 
 ## Usage
 
